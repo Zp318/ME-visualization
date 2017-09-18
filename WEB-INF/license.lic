@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<License>
+    <BaseInformation>
+        <ProductName>Sefon LZFXFK Platform</ProductName>
+        <Version>V101R001C01</Version>
+        <LibVersion>v1.6</LibVersion>
+        <LicenseType>10</LicenseType>
+        <ExpiredDate>2020-10-10</ExpiredDate>
+        <MACList>
+            <MAC>AC:4E:91:44:64:E9</MAC>
+            <MAC>AC:4E:91:46:82:2A</MAC>
+            <MAC>AC:4E:91:46:81:BE</MAC>
+            <MAC>AC:4E:91:46:82:18</MAC>
+            <MAC>AC:4E:91:46:82:42</MAC>
+        </MACList>
+        <DEFVALUE>1</DEFVALUE> <!-- 若开关未配置，默认取这个值 -->
+    </BaseInformation>
+    <FunctionList>
+    	<!-- 使用属性value来表示是否启用，子系统中间定义的是菜单或功能开关,1表示启用，0表示不启用 -->
+	<System id="OA" remark="协同办公" code="OA0000" value="1" >
+		<!-- 廉政风险防控功能开关是一个开关，它在xml中定义为一个组 -->
+		<Group id="ProbityRiskPrevent" remark="廉政风险防控" value="1">
+			<Menu id="lzjg" remark="廉政监管" code="SP_" display="0" />
+			<Menu id="powerlist" remark="行政职权目录" code="OA_POWERS_"  display="0" />
+			<Menu id="postrisk" remark="岗位风险点" code="OA_POST_"  display="0" />
+			<Menu id="riskonoff" remark="任务阻塞配置" code="OA_RISKCONFIG_" display="0" />
+			<Menu id="commonresource" remark="公共资源设置" code="OA_COMRESOURCE_" display="0" />
+			<Feature id="process" remark="流程管理" code="OA0001006" display="0" />
+			<Feature id="task" remark="协同工作" code="OA0001007" display="0" />
+			<Feature id="outgoing" remark="发文管理" code="OA0001008" display="0" />
+			<Feature id="incoming" remark="收文管理" code="OA0001009" display="0" />
+		</Group>
+		
+		<Group id="Conference" remark="会议管理" value="1">
+			<Menu id="ExtReserve" remark="会议预定" code="OA_EXT_RESERVE_" display="0"/>
+			<Menu id="ExtMeetingroom" remark="会议管理" code="OA_EXT_MEETINGROOM_" display="0" />
+		</Group>
+		
+		<Menu id="CalendarManagement" remark="日程计划" code="OA_PLAN_" value="0" />
+		<Menu id="ElecStamper" remark="印章管理" code="OA_SEAL_" value="0" />
+		<Menu id="DocumentDatum" remark="文档管理" code="OA_DOCUMENT_" value="0" />
+		
+		<Group id="AddressList" remark="通讯录管理" value="1">
+			<Menu id="publicMlist" remark="公共通讯录" code="OA_PUBLIC_MLIST_" display="0"/>
+			<Menu id="PrivateMlist" remark="个人通讯录" code="OA_PRIVATE_MLIST_" display="0" />
+		</Group>
+		
+		<Group id="VehicleManagement" remark="车辆管理" value="1">
+			<Menu id="ExtCarInfo" remark="车辆信息管理" code="OA_EXT_CAR_INFO_" display="0"/>
+			<Menu id="ExtCarUse" remark="车辆使用管理" code="OA_EXT_CAR_USE_" display="0" />
+			<Menu id="ExtCarSend" remark="车辆派遣记录" code="OA_EXT_CAR_SEND_" display="0" />
+		</Group>
+		
+		<Menu id="EmailManagement" remark="内部邮件" code="OA_EMAIL_" value="0" />
+		<Menu id="Investigate" remark="我的投票" code="MY_SURVEY_" value="0" />
+		<Menu id="PersonInfo" remark="人事档案" code="OA_EXT_PERSONALINFO_" value="0" />
+		<Menu id="ExtWorknote" remark="工作日志" code="OA_EXT_WORKNOTE_" value="0" />
+		<Feature id="PlusSign" remark="加签" code="OA0010" value="0" />
+		<Feature id="Countersign" remark="会签" code="OA0011" value="0" />
+		<Feature id="ExcuteFormToOutSystem" remark="行权对接" code="OA0012" value="0" />
+		<Menu id="ShortMsg" remark="短信提醒" code="OA_NOTE_" value="0" />
+	</System>
+	<System id="EDU" remark="廉政教育" code="EDU0000" value="1" />
+	<System id="DRM" remark="分析评估" code="DRM0000" value="1" />
+	<System id="PUB" remark="外部公示" code="PUB0000" value="1">
+			<Menu id="InfoLaw" remark="政策法规" code="OA_INFOLAW_" value="0" />
+			<Menu id="Opinion" remark="意见征集" code="OA_OPINION_" value="0" />
+			<Feature id="InfoPublish" remark="内部/外部" code="OA0012" value="0" />
+	</System>
+	<System id="ARC" remark="档案管理" code="ARC0000" value="1" />
+	<System id="BMS" remark="基础支持管理" code="BMS0000" value="1" display="0" />
+	<System id="PORTAL" remark="统一工作平台" code="PORTAL0000" value="1" display="0" />
+	<System id="FORM" remark="表单管理" code="FORM0000" value="1" display="0" />
+	<System id="CAS" remark="CAS" code="SSO0000" value="1" display="0" />
+	<System id="BPM" remark="BPM" code="BPM0000" value="1" display="0" />
+	<Feature id="FZB" remark="法制办" code="FZB0000" value="1" />
+    </FunctionList>
+    <CheckCode>e2f65b10c47ccebdd1fd54c26468ea26</CheckCode>
+</License>

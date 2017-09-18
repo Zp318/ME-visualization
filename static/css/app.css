@@ -1,0 +1,730 @@
+body{
+    width: 100%;
+    font-family: "微软雅黑",arial,fantasy;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+}
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        transform: scale(.3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+@-webkit-keyframes zoomOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        transform: scale(.3)
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3)
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.room-leave{
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.room-enter{
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+.room-transition{
+    display: inline-block;
+}
+
+.bounce-transition {
+    display: inline-block; /* 否则 scale 动画不起作用 */
+}
+.bounce-enter {
+    animation: bounce-in .5s;
+}
+.bounce-leave {
+    animation: bounce-out .5s;
+}
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes bounce-out {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+.fade-transition {
+    transition: opacity .3s ease;
+}
+.fade-enter{
+    opacity: 0;
+    z-index: 10 !important;
+}
+.fade-leave {
+    opacity: 0;
+    z-index: -1 !important;
+}
+
+.fadeInBig-transition {
+    display: inline-block; /* 否则 scale 动画不起作用 */
+}
+.fadeInBig-enter {
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+.fadeInBig-leave {
+    -webkit-animation-name: fadeOutLeftBig;
+    animation-name: fadeOutLeftBig;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+
+
+
+
+.panelBox{
+    box-sizing: border-box;
+    height: auto;
+    padding: 20px 40px;
+    position: relative;
+    width: 100%;
+}
+.panelBox.odd{
+    background-color: white;
+}
+.panelBox .panel-top{
+    height: 82px;
+    position: relative;
+}
+.panelBox .panel-top .panelTitle{
+    background: transparent url("../img/panelNum.png") no-repeat scroll 0 0;
+    height: 66px;
+    left: 0;
+    min-width: 70px;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+.panelBox .panel-top .panelTitle .No{
+    color: white;
+    display: inline-block;
+    font-size: 24px;
+    text-indent: 5px;
+}
+.panelBox .panel-top .panelTitle .title{
+    color: #3756b3;
+    display: inline-block;
+    font-size: 24px;
+    text-indent: 5px;
+    position: relative;
+    top: 10px;
+}
+.panelBox .panel-top .panelTitle .subTitle{
+    color: #98989a;
+    display: inline-block;
+    font-size: 12px;
+    left: -8px;
+    position: relative;
+    text-indent: 5px;
+    top: 24px;
+}
+.panelBox .panel-top .panel-tool{
+    float: right;
+    height: 79px;
+    position: relative;
+    width: 130px;
+}
+.panelBox .panel-top .panel-tool-bg{
+    background:transparent url("../img/panel-tool-bg_03.png") no-repeat;
+}
+.panelBox .panel-top .panel-tool .toolBar{
+    background: transparent url("../img/panel-tool-bar_03.png") no-repeat scroll 1px 2px;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    width: 30px;
+}
+.panelBox .panel-top .panel-tool ul{
+    position: absolute;
+    bottom: 5px;
+    left: 11px;
+}
+.panelBox .panel-top .panel-tool ul li{
+    display: inline-block;
+    width: 28px;
+    height: 26px;
+    background:transparent url("../img/panel-tool-bar_03.png") no-repeat;
+    cursor: pointer;
+
+}
+.panelBox .panel-top .panel-tool ul .tool-top{
+    background-position:-1px -35px;
+}
+.panelBox .panel-top .panel-tool ul .tool-view{
+    background-position:-28px -35px;
+}
+.panelBox .panel-top .panel-tool ul .tool-up{
+    background-position:-57px -35px;
+}
+.panelBox .panel-top .panel-tool ul .tool-down{
+    background-position:-85px -35px;
+}
+
+
+
+.panelBox .panel-center{
+    overflow: hidden;
+}
+
+
+.setting-box{
+    background: white;
+    box-shadow: 0 2px 3px #ccc;
+    height: auto;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;;
+    padding: 17px 28px;
+}
+
+@media screen and (max-width: 1100px){
+    .setting-box .item-box{
+        text-align: center;
+        width: 33.3%;
+        float: left;
+        margin: 15px 0;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1400px){
+    .setting-box .item-box{
+        text-align: center;
+        width: 25%;
+        float: left;
+        margin: 15px 0;
+    }
+}
+@media screen and (min-width: 1400px){
+    .setting-box .item-box{
+        text-align: center;
+        width: 20%;
+        float: left;
+        margin: 15px 0;
+    }
+}
+.setting-box .item-box .item{
+    background: white;
+    box-shadow: 0 0 3px #ccc;
+    display: inline-block;
+    height: 170px;
+    width: 257px;
+    box-sizing: border-box;
+    padding: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.setting-box .item-box .item .item-top{
+    position: relative;
+    height: 30px;
+    text-align:left;
+}
+.setting-box .item-box .item .item-bg{
+    height: 120px;
+    overflow: hidden;
+}
+.setting-box .item-box .item .item-top .panelTitle .No{
+    background: transparent url("../img/panelNum.png") no-repeat scroll 0 0 / 25px auto;
+    height: 100%;
+    left: 0;
+    min-width: 30px;
+    position: absolute;
+    top: 0;
+    width: auto;
+    color: white;
+    font-size: 10px;
+    text-indent: 1px;
+}
+.setting-box .item-box .item .item-top .panelTitle .subTitle{
+    color: #98989a;
+    display: inline-block;
+    font-size: 8px;
+    left: 3px;
+    position: relative;
+    text-indent: 5px;
+    top: 10px;
+}
+.setting-box .item-box .item .item-top .panelTitle .title{
+    color: #3756b3;
+    display: inline-block;
+    font-size: 11px;
+    position: relative;
+    text-indent: 5px;
+    top: 0;
+    font-weight: bold;
+}
+
+.itemTool-enter{
+    transform: scale(1);
+}
+.itemTool-leave {
+    transform: scale(0);
+}
+.setting-box .item-box .item .item-tool{
+    background: transparent url("../img/item-tool-bg_03.png") repeat scroll 0 0;
+    border-radius: 50%;
+    height: 370px;
+    left: -55px;
+    position: absolute;
+    top: -95px;
+    transition: all 0.5s ease 0s;
+    width: 370px;
+    z-index: 9;
+}
+.setting-box .item-box .item .item-tool .tool-title{
+    color: white;
+    display: block;
+    font-size: 21px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 155px;
+    width: 100%;
+}
+.setting-box .item-box .item .item-tool ul{
+    bottom: 120px;
+    position: absolute;
+    right: 80px;
+    width: auto;
+}
+.setting-box .item-box .item .item-tool ul li{
+    display: inline-block;
+    background:transparent url("../img/tool-white_03.png") no-repeat;
+    height: 26px;
+    width: 21px;
+}
+.setting-box .item-box .item .item-tool ul li.tool-top{
+    background-position: 0 1px;
+}
+.setting-box .item-box .item .item-tool ul li.tool-view{
+    background-position: -25px 0;
+    width: 27px;
+}
+.setting-box .item-box .item .item-tool ul li.tool-up{
+    background-position: -57px 0;
+}
+.setting-box .item-box .item .item-tool ul li.tool-down{
+    background-position: -87px 1px;
+}
+.setting-box .item-box .item .item-view{
+    background: transparent url("../img/item-bg_03.png") repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: top 0.5s ease;
+    z-index: 10;
+}
+.setting-box .item-box .item .item-view div{
+    background: transparent url("../img/item-not-view_03.png") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 58px;
+    margin-top: 57px;
+    width: 92px;
+}
+.exp-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 107px;
+}
+.exp-container .overflow{
+	overflow:hidden;
+	margin-left:40px;
+}
+.exp-list{
+    display: block;
+    vertical-align: middle;
+}
+.exp-list .exp-item{
+    background: url("../img/exp-icon_07.png") no-repeat;
+    cursor: pointer;
+}
+.exp-list .exp-item.typeA{
+    background-position: -3px -4px;
+    color: white;
+    height: 27px;
+    line-height: 29px;
+    text-align: center;
+    width: 26px;
+    margin-left: 0;
+}
+.exp-list .exp-item.typeB{
+    background-position: -3px -61px;
+    color: white;
+    font-size: 11px;
+    height: 27px;
+    line-height: 26px;
+    text-align: center;
+    width: 60px;
+}
+.exp-list .exp-line{
+    background: #1A2b40;
+    height: 10px;
+    margin-left: 13px;
+    width: 2px;
+    position: relative;
+}
+.exp-list .exp-line .expand-line{
+    background: #1A2b40;
+    position: absolute;
+    height: 20px;
+    top: -5px;
+    width: 2px;
+}
+.modal-box{
+    background-color: #13172c;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.modal-box li{
+    height: 33.3%;
+    width: 100%;
+    color: white;
+}
+.modal-box li>div>div:hover i{
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+.modal-box li>div>div:hover a{
+	transform:scale(1.5);
+	-webkit-transform:scale(1.5);
+}
+
+.modal-box .modal-close{
+    background: transparent url("../img/modal-icon_03.png") no-repeat scroll -320px -105px;
+    height: 65px;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    width: 62px;
+    cursor: pointer;
+}
+
+.modal-box li>div{
+    float: left;
+    height: 100%;
+    width: 33.3%;
+    cursor: pointer;
+}
+.modal-box li>div:hover{
+    background-color: #487cce;
+}
+
+.modal-box .menu-wrap,.modal-box .menu-wrap ul{
+    height: 100%;
+}
+.modal-box .dialog{
+    /*background-color: #487cce;*/
+    display: table;
+}
+.modal-box li>div>div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-box li>div>div i{
+    background: transparent url("../img/modal-icon2.png") no-repeat scroll 0 0;
+    display: block;
+    height: 55px;
+    width: 50px;
+    margin:0 auto;
+}
+.modal-box li>div.mwp>div i{
+    background-position: 2px 4px;
+    height: 41px;
+    width: 37px;
+}
+.modal-box li>div.vp>div i{
+    background-position: -34px 4px;
+    height: 41px;
+    width: 37px;
+}
+.modal-box li>div.esp>div i{
+     background-position: -70px 4px;
+    height: 41px;
+    width: 37px;
+}
+.modal-box li>div.imp>div i{
+     background-position: -105px 4px;
+    height: 41px;
+    width: 35px;
+}
+.modal-box li>div.dialog>div i{
+    background-position: -139px 4px;
+    height: 41px;
+    width: 36px;
+}
+.modal-box li>div.bmp>div i{
+   background-position: -174px 4px;
+    height: 41px;
+    width: 37px;
+}
+
+.modal-box li>div.about>div i{
+   background-position: -210px 4px;
+    height: 41px;
+    width: 37px;
+}
+
+.modal-box li>div{
+    display: table;
+}
+.modal-box li>div>div span{
+    color: white;
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+}
+.modal-box li>div>div a{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    margin-top:10px;
+    transition:transform 0.5s;
+    -webkit-transition:transform 0.5s;
+}
+
+
+#appHead{
+    width: 100%;
+    height: 80px;
+    background:#0b1218 url("../img/head-bg.jpg") no-repeat center top;
+    position:fixed;
+    top: 0;
+    z-index: 102;
+}
+#appBody{
+    width: 100%;
+    height: auto;
+    background: #f2f2f2;
+    position: relative;
+    margin-top: 80px;
+}
+#appFoot{
+    width: 100%;
+    height: 80px;
+}
+
+.headContainer{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.footContainer{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background:#0b1218 url("../img/head-bg.jpg") no-repeat center top;
+    transition: opacity 1s linear;
+}
+.footContainer .copyRight{
+    color: #aaaaaa;
+    text-align: center;
+    line-height: 80px;
+    height: 100%;
+}
+
+
+
+#appLogo{
+    background:transparent url("../img/appLogo2_03.png") no-repeat;
+    height: 46px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    width: 122px;
+}
+#appHead .leftTools{
+    height: 100%;
+    left: 40px;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+
+#appHead .leftTools .user-info-bar{
+    background: transparent url("../img/head-tool-icon.png") no-repeat scroll 0 -14px;
+    display: block;
+    float: left;
+    height: 30px;
+    margin-top: 25px;
+    width: 29px;
+    cursor: pointer;
+}
+#appHead .leftTools .user-setting-bar{
+    background: transparent url("../img/head-tool-icon.png") no-repeat scroll -47px 10px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 100%;
+    margin-left: 20px;
+    width: 53px;
+}
+#appHead .leftTools .user-setting-bar.active{
+    background-color: #565a5e;
+}
+
+#appHead .rightTools{
+    height: 50px;
+    right: 40px;
+    position: absolute;
+    top: 17px;
+    width: auto;
+}
+#appHead .rightTools .user-name-bar{
+    float: left;
+}
+#appHead .rightTools .user-name-bar span{
+    color: white;
+    font-size: 15px;
+}
+#appHead .rightTools .user-name-bar i{
+    background: transparent url("../img/head-tool-icon.png") no-repeat scroll -128px -11px;
+    display: inline-block;
+    height: 45px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 50px;
+}
+#appHead .rightTools .user-loginOut-bar{
+    background: transparent url("../img/head-tool-icon.png") no-repeat scroll -215px -11px;
+    display: block;
+    float: left;
+    height: 45px;
+    margin-right: 5px;
+    margin-left: 95px;
+    vertical-align: middle;
+    width: 32px;
+    cursor: pointer;
+}
+
+#appBody .bodyContainer{
+    width: 100%;
+    height: auto;
+    background: #f2f2f2;
+    position: relative;
+}
+
+#loading{
+	bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#loading div.table{
+	display:table;
+	width:100%;
+	height:100%;
+}
+#loading div.table-cell{
+	display:table-cell;
+	vertical-align:middle
+}
+
+#loading svg{
+	display:block;
+	margin:auto;
+}
+
+

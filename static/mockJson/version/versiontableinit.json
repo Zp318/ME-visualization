@@ -1,0 +1,194 @@
+{
+    "page": [
+        {
+            "curPage": 1,
+            "perPageNum": 15,
+            "curRecordNum": 15,
+            "totals": 2,
+            "allPage": 1,
+            "beginNum": 1,
+            "endNum": 15
+        }
+    ],
+    "node": [
+        {  
+            "listId":1,
+            "projectName": "招商",
+            "projectVersion": "1.1.2.1",
+            "operator": "admin",            
+            "modifyTime": "2017-08-07 12:00:00",
+            "versionName": " PROJECT_ME_VERSION.txt",
+            "basicName": " PROJECT_ME_2.1.rar"
+        },
+         {
+             "listId":2,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+             "listId":3,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":4,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":5,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":6,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":7,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":8,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":9,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":10,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":11,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":12,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":13,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":14,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":15,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":16,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":17,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":18,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        },
+         {
+            "listId":19,
+            "projectName": "中行",
+            "projectVersion": "1.1.2.2",
+            "operator": "admin",
+            "modifyTime": "2017-08-08 12:00:00",
+           "versionName":" PROJECT_ME_VERSION1.txt",
+            "basicName": " PROJECT_ME_2.2.rar"
+        }
+    ],
+    "status": [
+        {
+            "statusCode": 200,
+            "mesLevel": 1,
+            "mesText": "查询成功",
+            "succ": true
+        }
+    ]
+}
