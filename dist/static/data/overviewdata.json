@@ -1,0 +1,8 @@
+{
+		  "code":200,
+          "message":"刷新成功",
+		  "runningNum":12,
+		  "totalFinishedNum":1024,
+		  "totalSuccessNum":1000,
+		  "totalFailedNum":24
+	}

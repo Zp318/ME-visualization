@@ -1,0 +1,63 @@
+/*导航样式*/
+.MEleft{
+	.eltitle{
+		 width: 100%;
+		 text-align: center;
+		 line-height: 0.33rem;
+         background: rgba(84,144,255,0.20);
+         font-size: 0.18rem;
+	     color: #FFFFFF;
+         text-shadow: 0 0 4px rgba(255,255,255,0.50);
+         margin-top: 0.25rem;
+	}
+	.tac{
+		margin-top: 0.1rem
+	}
+	.el-submenu{
+		.el-menu{
+          background-color:inherit !important;
+		}
+		.el-menu-item:hover{
+		      background: rgba(75, 75, 75, 0.5) !important;
+		}
+	 } 
+	 .el-menu{
+	 	  background-color:inherit !important;
+	 }
+	 .el-submenu__title{
+       background:  rgba(181,218,255,0.2)!important;
+        /*box-shadow: 0 0.01rem 0 0 #484D53 !important;*/
+        font-size: 0.12rem !important;  
+        height: 0.4rem !important;
+        line-height: 0.4rem!important;
+        i{
+        	color:#fff !important;
+        }
+        .mag{
+        	opacity: 0.8;
+			font-family: MicrosoftYaHei;
+			font-size: 0.14rem;
+			color: #FFFFFF;
+			 }
+	 }
+	 .el-menu-item{
+	 	height: 0.4rem !important;
+	  }
+	 .file{
+	 	font-size: 0.14rem !important;
+	 	margin:0 0.1rem;
+	 }
+	 #index4{
+	 	display: inline-block;
+	 	
+	 	 width:100%;
+	 	 height: 100%;
+	 	 .el-submenu__title{
+	 	 		background: rgba(75,75,75,0.50)!important;
+	 	 }
+	 	 .versiongl{
+	 	 	color:#fff;
+	 	 	opacity: 0.5
+	 	 }
+	 }
+}

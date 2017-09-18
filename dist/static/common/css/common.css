@@ -1,0 +1,351 @@
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html {
+	height: 100%;
+	/*background: #fff;*/
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	background-color: #dee7ee ;
+}
+
+body {
+	width: 100%;
+	/* height: 8rem; */
+	height: 100%;
+	/* background: rgb(237,238,242); */
+	/*background-color: #dee7ee ;*/
+	margin:0 auto;
+	padding-right: 0 !important;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.VersManage .publicTable .el-table__body-wrapper::-webkit-scrollbar-track {
+		  background-color: red!important;
+	}
+.MeVisual #app{
+	height: 100%;
+}
+.MeVisual header{
+	width:13.66rem;
+	height: 0.7rem;
+    background: rgba(71,71,71,0.4);
+	margin:0 auto;
+	display:table-cell;
+    vertical-align:middle;
+}
+/*#header样式左边*/
+.MeVisual header .LeftImg{
+	width:1.2rem;
+	height:0.4rem;
+	line-height: 0rem;
+	float: left;
+	margin-left: 0.4rem;
+	vertical-align:middle;
+
+}
+.MeVisual header .LeftImg img{
+	width:100%;
+	height:100%;
+	vertical-align:middle;
+}
+/*header右边登录用户样式*/
+.MeVisual header .LoginUser{
+	width:1.5rem;
+	height:0.4rem;
+	line-height: 0rem;
+	float: right;
+	font-size: 0;
+}
+.MeVisual header .circle{
+	width:0.26rem;
+	height: 0.26rem;
+	border-radius: 0.13rem;
+	display: inline-block;
+	vertical-align:middle;
+	opacity: 0.3;
+    background: #FFFFFF;
+}
+.MeVisual header .LoginUser .user{
+	margin: 0 0.15rem;
+	line-height: 0.4rem
+}
+.MeVisual header .LoginUser .user,.el-icon-upload2{
+	font-size: 0.12rem;
+	color: #FFFFFF;
+	vertical-align:middle;
+}
+.MeVisual header .LoginUser .el-icon-upload2{
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); 	/* IE 9 */
+	-moz-transform:rotate(90deg); 	/* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+	-o-transform:rotate(90deg); 
+	opacity: 0.8;
+	font-size: 0.15rem;
+}
+/*下边内容*/
+.MeVisual .content{
+	width:13.66rem;
+	height: calc(100% - 0.7rem);
+	font-size: 14px !important;
+}
+/*下边内容左边部分*/
+.MeVisual .content .MEleft{
+	width: 2rem;
+    height: 98%;
+    float: left;
+    background: rgba(71,71,71,0.4);
+    margin-top: 0.18rem;
+}
+/*下边内容右边部分*/
+.MeVisual .content .MErightVersion{
+	width:calc(100% - 2rem);
+	height: 100%;
+	float: right;
+
+}
+.MeVisual .MErightVersion .VersManage,.MeVisual .MErightVersion .ResourceManage{
+	width:100%;
+	height: 100%;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/*右边的大表单*/
+.MeVisual .MErightVersion .formtab{
+  width: 11.36rem;
+  height: 94%;
+  font-size: 0
+}
+.MeVisual .MErightVersion .formtab .formheader{
+	width:100%;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	background: rgba(71,71,71,0.4);
+}
+.MeVisual .formheader .span{
+	font-family: PingFangSC-Regular;
+	font-size: 0.12rem;
+	/*color: #292B3B;*/
+	text-indent: 0.3rem;
+	color: #FFFFFF;
+	/*line-height: 18px;*/
+}
+.MeVisual .formheader .red{
+	color:red;
+}
+.MeVisual .formheader .query{
+    /*border-radius: 0.04rem!important;*/
+    width:0.7rem!important;
+    height: 0.28rem;
+    text-align: center!important;
+    color: #fff !important;
+    margin:0.1rem 0.4rem;
+    /*background: rgba(56,161,255,0.70)!important;*/
+}
+.MeVisual .el-loading-mask{
+	 background: rgba(154,154,154,0.10)!important;
+}
+.MeVisual .el-loading-spinner{
+	top:35%;
+}
+
+.MeVisual iframe{
+	width: 100%;
+	height: 100%;
+}
+
+.MeVisual .MErightVersion .el-input{
+	width: 1.2rem !important;
+	vertical-align: middle;
+	display: inline-block;
+}
+.MeVisual .MErightVersion .el-input__inner{
+	line-height: 0.28rem!important;
+	background-color: rgba(74,74,74,0.30)!important;
+    border: 1px solid rgba(116,165,255,0.80)!important;
+    border-radius: 4px!important;
+    font-family: PingFangSC-Regular;
+	font-size: 12px !important;
+	color: #FFFFFF!important;
+}
+.MeVisual .MErightVersion .el-input, .el-select{
+
+	/*vertical-align: middle !important;*/
+}
+
+/*input兼容问题*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+	-webkit-appearance:none!important;
+}
+input[type="number"]{
+	-moz-appearance:textfield;
+}
+.MeVisual .MErightVersion .el-pagination .el-select .el-input{
+	vertical-align: inherit!important;
+	margin:-0.025rem 0 0 0.03rem!important;
+}
+/*设置button样式*/
+.MeVisual .MErightVersion .el-button--primary,.el-button--default{
+/*	background-color:rgb(114,179,238)!important;
+	border-color:rgb(114,179,238)!important;*/
+	color: #fff;
+}
+/*.MeVisual .MErightVersion .el-button{
+	border: 0!important;
+}*/
+.MeVisual .MErightVersion .el-button:focus, .el-button:hover{
+	 border: 0.01rem solid #6CA0FF
+}
+.elbutton{
+		    border-radius: 0.04rem!important;
+		    width:0.7rem!important;
+		    height: 0.28rem;
+		    text-align: center!important;
+		    background: rgba(56,161,255,0.70)!important;
+            border: 0.01rem solid #6CA0FF
+		    /*border:0!important;*/
+		}
+.elbutton:hover{
+ opacity: 0.6!important;
+background: rgba(202,118,14,0.70)!important;
+border: 0.01rem solid #FFB28D!important;
+border-radius: 0.04rem!important;
+}
+.MeVisual .limitedWidth {
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.MeVisual .el-picker-panel__content{
+
+}
+.MeVisual .el-picker-panel__content table{
+	color:#c1c1c1;
+}
+/*遮罩层*/
+.MeVisual .Wholemask{
+	width: 100%;
+	height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0.5;
+	position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    z-index:2 
+}
+/*日历*/
+.MeVisual .el-picker-panel{
+	 background: #474747;
+	 color: #fff;
+	 border:0;
+	 border-radius: 0;
+	 box-shadow: none;
+}
+.MeVisual .el-date-table td.disabled{
+	background: #474747;
+	 /*color: #fff*/
+}
+.MeVisual .MErightVersion .el-table__body tr.el-table__row--striped td{
+    background:rgba(71,71,71,0.5)!important; 
+}
+.MeVisual .MErightVersion .el-table__footer-wrapper thead div, .el-table__header-wrapper thead div{
+  background:none!important; 
+  color: #fff!important; 
+}
+.MeVisual .MErightVersion .el-table::after, .el-table::before{
+  background:none!important;
+}
+ .MeVisual .el-select-dropdown{
+              	 background:rgba(71,71,71,0.4)!important;
+              	 border: 0!important;
+              	 color: #fff!important;
+              }
+  .MeVisual  .el-select-dropdown.is-multiple .el-select-dropdown__item.selected.hover, .el-select-dropdown__item.hover, .el-select-dropdown__item{
+    	 color: #fff!important;
+    }
+.MeVisual  .el-select-dropdown.is-multiple .el-select-dropdown__item.selected.hover, .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+        background: #4A5B75 !important;
+}
+.MeVisual .el-select-dropdown__item.selected{
+background: rgba(56, 161, 255, 0.7) !important;
+}
+.nodemes .noderight{
+	display: inline-block;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	color:#fff;
+	 background-color: rgba(74,74,74,0.30)!important;
+    border: 1px solid rgba(116,165,255,0.80)!important;
+    border-radius: 4px!important;
+     text-align: center;
+}
+.nodemes .file {
+    position: relative;
+    display: inline-block;
+    background: #3781c4;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    width: 0.52rem;
+     margin-top:-0.049rem;
+     height: 0.24rem;
+     vertical-align: middle;
+    border-left: 1px solid rgba(116,165,255,0.80)
+}
+.nodemes .file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: default;
+}
+.nodemes .upload{
+	 background-color: rgba(74,74,74,0.30)!important;
+    border-radius: 4px!important;
+	 /*line-height: 0.25rem!important;*/
+    font-family: PingFangSC-Regular;
+    font-size: 12px !important;
+    color: #FFFFFF!important;
+    border: 0;
+    outline: none;
+    position: relative;
+    top:-0.02rem;
+    overflow:hidden;
+   text-overflow:ellipsis;
+   white-space:nowrap;
+}
+/*.nodemes .file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+
+}*/
+.MeVisual .el-message-box{
+  background:rgba(71,71,71,1)!important; 
+}
+.MeVisual .el-message-box__title{
+	color: #fff
+}
+.MeVisual .el-message-box__message{
+	color: #fff
+}
+.MeVisual .el-message-box__btns .el-button--primary,.el-button--default{
+	border-radius: 0.04rem !important;
+    background: rgba(56, 161, 255, 0.7) !important;
+    border: 0!important;
+}
+.MeVisual .nodemes .edit{
+	width: 1.2rem!important;
+}

@@ -1,0 +1,57 @@
+{
+    "data": {
+        "folder": [
+            {
+                "listId": 1,
+                "fileName": "you",
+                "fileSuffix": "",
+                "nodeProjectId": 1,
+                "fileType": 0,
+                "parentId": -1,
+                "operator": "admin",
+                "fileMd5": "DSFSERTE==8989",
+                "fileVersion": "1.1.2.3",
+                "filePath": "/Me/version/",
+                "modifyTime": "2017-08-07 12:00:00"
+            },
+             {
+                "listId":2,
+                "fileName": "now",
+                "fileSuffix": "",
+                "nodeProjectId": 1,
+                "fileType": 0,
+                "parentId": -1,
+                "operator": "admin",
+                "fileMd5": "DSFSERTE==8989",
+                "fileVersion": "1.1.2.3",
+                "filePath": "/Me/version/",
+                "modifyTime": "2017-08-07 12:00:00"
+            } 
+
+        ],
+        "file": [
+            {
+                "listId": 4,
+                "fileName": "chokc",
+                "fileSuffix": "txt",
+                "nodeProjectId": 1,
+                "fileType": 1,
+                "parentId": 1,
+                "operator": "admin",
+                "fileMd5": "DSFSERTE==8989",
+                "fileVersion": "1.1.2.3",
+                "filePath": "/Me/version/",
+                "modifyTime": "2017-08-08 12:00:00"
+            }
+        ],
+        "path":".../sds/dsds/dsd",
+        "status": [
+            {
+                "statusCode": 200,
+                "mesLevel": 1,
+                "mesText": "查询文件夹成功",
+                "succ": true
+            }
+        ]
+    }
+}

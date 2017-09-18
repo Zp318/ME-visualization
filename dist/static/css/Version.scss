@@ -1,0 +1,370 @@
+.VersManage{
+	.addDel{
+		width:100%;
+		height: 0.5rem;
+		display:flex;
+	    align-items:center;
+	    .el-icon-plus{
+	    	/*color:#66CAFF;*/
+	    	font-size: 0.12rem;
+	    	margin-right: 0.04rem
+	    }
+	    .el-icon-edit{
+	    	/*color:#66CAFF;*/
+	    	font-size: 0.12rem;
+	    	margin-right: 0.04rem
+	    }
+	    .el-icon-delete{
+	    	/*color:#66CAFF;*/
+	    	font-size: 0.12rem;
+	    	margin-right: 0.04rem
+	    }
+	    .el-icon-upload2{
+	    	/*color:#66CAFF;*/
+	    	font-size: 0.12rem;
+	    	margin-right: 0.02rem
+	    }
+
+		.elbutton{
+		    border-radius: 0.04rem!important;
+		    width:0.7rem!important;
+		    height: 0.28rem;
+		    text-align: center!important;
+		    background: rgba(56,161,255,0.70)!important;
+            border: 0.01rem solid #6CA0FF
+		    /*border:0!important;*/
+		}
+		.elbutton:hover{
+			 opacity: 0.6!important;
+            background: rgba(202,118,14,0.70)!important;
+            border: 0.01rem solid #FFB28D!important;
+            border-radius: 0.04rem!important;
+		}
+		.xiazai{
+			 width:1.1rem!important;
+		}
+		.del{
+			opacity: 0.6!important;
+            background: rgba(202,118,14,0.70)!important;
+            /*border: 0.01rem solid #FFB28D!important;*/
+            border-radius: 0.04rem!important;
+		}
+	}
+	.formheader{
+		 .el-checkbox__input.is-checked {
+	    	.el-checkbox__inner{
+	    		background: #56ADFA!important;
+                 border-radius: 2px!important;
+	    	}
+	    }
+	     .el-checkbox__input.is-checked .el-checkbox__inner{
+       	    background: rgba(56, 161, 255, 0.7) !important;
+       }
+	}
+	 
+	.publicTable{
+		width:100%;
+		height: calc(100% - 0.81rem);
+		line-height: 0.5rem;
+		background: rgba(71,71,71,0.4);
+		position: relative;
+		/*display:flex;*/
+	 /*   align-items:center;*/
+        .el-radio__label{
+        	display: none!important
+        }
+    	.eltable{
+	   	width:98%;
+	    border:0!important;
+	   	overflow-x:hidden;
+	   	overflow-y: auto;
+	   	margin:0.1rem auto;
+	   	border: 0!important;
+	   	background: none!important;
+	/*   	position: relative;
+         bottom: 0.01rem;*/
+	   	thead{
+	   		tr{
+	   			font-size: 0.14rem!important;
+	   		}
+	   		.el-checkbox__inner{
+	   			/*display: none!important;*/
+	   		}
+	   	}
+	   	 td{
+           border-bottom: 0!important;
+           color: #fff!important; 
+        	 font-size: 0.12rem
+        } 
+        tr{
+        	/* background:none!important; 
+*/	
+			background: rgba(0,0,0,0);
+
+         }
+        tr:hover{
+        	background: #4A5B75!important; 
+        }
+        tr:hover>td{
+			background-color: rgba(0,0,0,0) !important;
+        };
+         .el-table__row:hover{
+         	background: #4A5B75!important; 
+         }
+         
+       .el-checkbox__input.is-checked {
+	    	.el-checkbox__inner{
+	    		background: #56ADFA!important;
+                 border-radius: 2px!important;
+	    	}
+	    }
+	     .el-checkbox__input.is-checked .el-checkbox__inner{
+       	    background: rgba(56, 161, 255, 0.7) !important;
+       }
+       th.is-leaf{
+           border-bottom: 0!important;
+           background-color: rgba(71,71,71,0.4)!important;
+         }
+	   	thead{
+	   		tr{
+	   		  	.cell{
+                    .el-table__column-filter-trigger{
+                      /*display: none;*/
+                    }
+	   		  	}
+	   		  
+	   		}
+	   	}
+	   	tbody{
+			color:#666666;
+			 .el-table td, .el-table th{
+                height: 0.2rem
+	          }
+
+			} 
+	     }
+	       .el-table__body-wrapper {
+			    overflow: auto;
+			    position: relative;
+			   	height:3.07rem;
+			    overflow: auto;
+			    overflow-x: hidden;
+			    right: -17px;
+			    width: 100%;
+              }
+           .el-table__header-wrapper{
+           	 position: relative;
+           	  right: -17px;
+           }
+          .el-pagination{
+          	/*  position: absolute;
+              right: 0.5rem;
+               bottom: 0rem;*/
+               margin:.3rem 7rem;
+              .el-pager{
+              	li.active{
+              		 background: rgba(56,161,255,0.70)!important;
+              		 border: 0!important;
+              	}
+              }
+              button{
+              		background:rgba(71,71,71,0.4)!important;
+              		border: 0!important;
+              	}
+              .el-pagination__editor{
+              	 background:rgba(71,71,71,0.4)!important;
+              		    border: 0.01rem solid #6CA0FF;
+              		color: #fff!important;
+              		    border-radius: 0.04rem!important;
+              }
+
+          }
+         .dialog {
+     	 width:8rem;
+     	 height:6rem;
+     	 margin:0 auto;
+     	 top: 10%!important;
+     	.active{
+     	 border:1px solid red;
+     	 border-radius: 5px
+     	}
+     	input{
+     		width:2rem;
+     	}
+     	 .nodemes{
+     	  margin-top:3%;
+     	span{
+     		display: inline-block;
+     		width:18%;
+     		text-align: right;
+     	}
+      }
+     }
+	}
+	.addVersion{
+	    position:absolute;
+		margin: auto;
+		top: 0; 
+		left: 0; 
+		bottom: 0; 
+		right: 0; 
+		width: 5.2rem;
+		height: 3.1rem;
+		background: rgba(71,71,71,1);
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.20);
+        border-radius: 4px;
+        opacity: 0.95;
+		z-index: 11;
+		.addTitle{
+			width:100%;
+			height: 0.5rem;
+			background: #4A5B75;
+			border-radius:0.04rem 0.04rem 0 0;
+            text-indent: 0.2rem;
+            span{ 	
+			font-size: 0.16rem;
+			line-height: 0.5rem;
+			color: #D3F0FF;
+            }
+            i{
+            font-size: 0.16rem;
+			color: #D3F0FF;
+			line-height: 0.5rem;
+			float: right;
+			margin-right: 0.13rem;
+			font-style: normal;	
+			cursor: pointer;
+            }
+		}
+		.addContent{
+			width: 100%;
+			height:auto;
+			.nodemes{
+				width:100%;
+				margin:0.2rem auto;
+				color:#fff;
+				font-size: 0.12rem;
+				.addinput{
+					width:1.6rem;
+					height: 0.28rem;
+					/*background: #FFFFFF;*/
+					border-radius: 4px;
+				}
+				span{
+					display: inline-block;
+					text-align: right;
+					width:40%;
+					margin-right: 0.08rem;
+				}
+				p{
+					
+					font-size: 0.12rem;
+					color: #919191;
+					display:inline;
+				}
+				.imgurlp{
+					display:inline-block!important;
+					width:3rem;
+					overflow:hidden;
+					text-overflow:ellipsis;
+					color: #fff;
+					line-height: 0.16rem;
+					white-space:nowrap;
+					vertical-align: middle;
+				}
+				.upload-demo{
+					display: inline-block;
+					.el-upload-list__item-name{
+						display: none;
+					}
+					.el-icon-upload-success{
+						display: none;
+					}
+				}
+				button{
+					background: rgba(56, 161, 255, 0.7) !important;
+					border-radius: 4px;
+					width: 0.8rem;
+					height: 0.28rem;
+					color: rgba(0,0,0,0.65);
+					color: #fff;
+					border: 0
+				}
+				.el-icon-upload2{
+					 color: #fff;
+					font-size:0.10rem;
+					margin-right: 0.08rem
+				}
+			}
+		}
+		.addSure{
+          width: 100%;
+          height: auto;
+          text-align: center;
+          button{
+          	background: rgba(56, 161, 255, 0.7) !important;
+			border: 0;
+			border-radius: 4px;
+			width: 0.65rem;
+			height: 0.28rem;
+			text-align: center;
+			font-size: 0.14rem;
+			color: #666666;
+			line-height: 0.2rem;
+			margin-left: 0.2rem;
+			margin-top:0.1rem;
+			color: #fff
+          }
+          .submitsure{
+          	background: rgba(56, 161, 255, 0.7) !important;
+            border: 0;
+            border-radius: 4px;
+            width: 0.65rem;
+            height: 0.28rem;
+            text-align: center;
+            font-size: 0.14rem;
+            color: #666666;
+            line-height: 0.2rem;
+            margin-left: 0.2rem;
+            color: #fff;
+          }
+          button.active{
+          	background: #108EE9;
+          }
+          button:hover{
+          	background: #108EE9;
+          }
+		}
+	}
+	button{
+		outline: none;
+	}
+	.Download{
+	  width:2.6rem;
+	  height: 0.7rem;
+	  position: absolute;
+	  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.20);
+	  border-radius: 4px;
+	  bottom: 0.7rem;
+	  right: 0.5rem;
+	  /*text-align: center;*/
+	  z-index: 3;
+	  background: rgba(74,74,74,0.30);
+      border: 1px solid rgba(116,165,255,0.80);
+	  i{
+	  	font-size: 0.13rem;
+	  	font-style: normal;	
+	  	color: #c4c4c4;
+	  	float: right;
+		margin-right: 0.13rem;
+		cursor: pointer;
+	  }
+	  .elprogress{
+	  	margin:0.05rem auto;
+	  	text-align: center; 
+	  }
+	  .el-progress__text{
+	  		color: #fff
+	  }
+	}
+}
